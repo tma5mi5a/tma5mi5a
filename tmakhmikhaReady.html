@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tmakhmikha</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header {
+            background: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff9900;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .menu-item {
+            text-align: center;
+            margin: 15px;
+            flex: 1 1 180px; /* Flex basis with a minimum width */
+            max-width: 180px; /* Restrict the maximum width */
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #ffcc00;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        #reservation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #reservation label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        #Tables {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tmakhmikha</h1>
+    <nav>
+        <ul>
+            <li><a href="#sandwiches">Sandwiches</a></li>
+            <li><a href="#spicy">Spicy</a></li>
+            <li><a href="#cookies">Cookies</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sandwiches">
+    <h2>Our Sandwiches</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Thon</h3>
+            <img src="https://th.bing.com/th/id/OIP.0lGNio2btGqtrCpRrG5iRAHaDt?w=308&h=174&c=7&r=0&o=5&pid=1.7" alt="Thon">
+        </div>
+        <div class="menu-item">
+            <h3>Kebab</h3>
+            <img src="https://th.bing.com/th/id/OIP.O1zoy4uFs6cIAsOskEvsQwHaHa?w=195&h=195&c=7&r=0&o=5&pid=1.7" alt="Kebab">
+        </div>
+        <div class="menu-item">
+            <h3>Burger</h3>
+            <img src="https://th.bing.com/th/id/OIP.g_EYshV4TBrKFonMmN2KEgHaE7?w=252&h=180&c=7&r=0&o=5&pid=1.7" alt="Burger">
+        </div>
+        <div class="menu-item">
+            <h3>Tmakhmikha Special</h3>
+            <img src="https://th.bing.com/th/id/OIP.ky6oEAG_8SzonSOsw4ZvMgHaEK?w=302&h=180&c=7&r=0&o=5&pid=1.7" alt="Special">
+        </div>
+    </div>
+</section>
+
+<section id="spicy">
+    <h2>Spicy Dishes</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Pasta</h3>
+            <img src="https://th.bing.com/th/id/R.3c272e0643f3cc71eb4e1934f6a567a7?rik=Q6DGbNjo17P5Rg&pid=ImgRaw&r=0" alt="Pasta">
+        </div>
+        <div class="menu-item">
+            <h3>Couscous</h3>
+            <img src="https://th.bing.com/th/id/OIP.iqnLXnw90rGlEeEs4tEVmgAAAA?w=197&h=180&c=7&r=0&o=5&pid=1.7" alt="Couscous">
+        </div>
+        <div class="menu-item">
+            <h3>Kamouniya</h3>
+            <img src="https://th.bing.com/th/id/OIP.3ddQPYGUI8INbjCToQoS6QHaJ3?w=124&h=180&c=7&r=0&o=5&pid=1.7" alt="Kamouniya">
+        </div>
+        <div class="menu-item">
+            <h3>Today's Special</h3>
+            <img src="https://th.bing.com/th/id/OIP.bqKqhZaOAOh6860WPhJTDQHaH_?w=171&h=184&c=7&r=0&o=5&pid=1.7" alt="Today's Special">
+        </div>
+    </div>
+</section>
+
+<section id="cookies">
+    <h2>Cookies</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Cake</h3>
+            <img src="https://th.bing.com/th/id/OIP.Bw7UFd_ssNMjgHgSPRjejAHaLH?w=184&h=337&c=7&r=0&o=5&pid=1.7" alt="Cake">
+        </div>
+        <div class="menu-item">
+            <h3>Baklewa</h3>
+            <img src="https://th.bing.com/th/id/OIP.TsAbAbDySZCJul-lv8Y60QHaE6?w=298&h=198&c=7&r=0&o=5&pid=1.7" alt="Baklewa">
+        </div>
+    </div>
+</section>
+
+<section id="drinks">
+    <h2>Drinks</h2>
+    <div class="menu">
+        <div class="menu-item">
+            <h3>Coke</h3>
+            <img src="https://th.bing.com/th/id/OIP.jnaZn1_v6iMsW4deLi0tcgAAAA?w=115&h=186&c=7&r=0&o=5&pid=1.7" alt="Coke">
+        </div>
+        <div class="menu-item">
+            <h3>Fruit Juice</h3>
+            <img src="https://th.bing.com/th/id/OIP.L89rFpnl8JhohFBWBVHSygHaHG?w=172&h=180&c=7&r=0&o=5&pid=1.7" alt="Fruit Juice">
+        </div>
+        <div class="menu-item">
+            <h3>Redbull</h3>
+            <img src="https://th.bing.com/th/id/OIP.FatmBuDWyDSiYDf2dU8NgwHaJ4?w=148&h=198&c=7&r=0&o=5&pid=1.7" alt="Redbull">
+        </div>
+        <div class="menu-item">
+            <h3>Mojito</h3>
+            <img src="https://th.bing.com/th/id/OIP.XJ-PSOgTYaJq7KDk-wBqzAHaHa?w=207&h=207&c=7&r=0&o=5&pid=1.7" alt="Mojito">
+        </div>
+    </div>
+</section>
+
+<section id="reservation">
+    <h2>Reservation</h2>
+    <label for="Tables">Select Table</label>
+    <select id="Tables">
+        <option value="Table 2">Table for 2</option>
+        <option value="Table 4">Table for 4</option>
+        <option value="VIP">VIP</option>
+    </select>
+</section>
+
+<footer>
+    <p>&copy; 2024 Tmakhmikha</p>
+    <p>Location: Boumhel, Tunisia</p>
+</footer>
+
+</body>
+</html>
