@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Restaurant</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffb347, #6ef09a), url('https://source.unsplash.com/1600x900/?floral-pattern') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 1.5em;
+        }
+        nav ul li a {
+            color: #ffecb3;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Banner Section */
+        .banner {
+            height: 80vh;
+            background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/1600x900/?restaurant-interior') no-repeat center center;
+            background-blend-mode: overlay;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3.5em;
+        }
+        .banner p {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+
+        /* Food and Drinks Section */
+        .menu-section {
+            padding: 3em 2em;
+            background-color: #fff9e6;
+            text-align: center;
+            color: #444;
+        }
+        .menu-section h2 {
+            font-size: 2.5em;
+            color: #ff8c42;
+        }
+        .menu-section p {
+            margin: 1em 0;
+            color: #777;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 2em;
+        }
+        .menu-item {
+            background-color: #fff3c6;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .menu-item h3 {
+            font-size: 1.5em;
+            margin-top: 0.5em;
+            color: #ff7a3d;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 3em 2em;
+            background: linear-gradient(45deg, #6ef09a, #ffb347);
+            text-align: center;
+            color: #333;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            color: #4b9660;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1.5em;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .contact-item {
+            background: #fff;
+            padding: 1.5em;
+            border-radius: 8px;
+            width: 250px;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .contact-item:hover {
+            transform: scale(1.05);
+        }
+        .contact-item i {
+            font-size: 1.5em;
+            color: #ff7a3d;
+            margin-bottom: 0.5em;
+        }
+
+        /* Footer */
+        footer {
+            background: #4b9660;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Ultimate GO MY CODE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner" id="home">
+        <div>
+            <h1>Welcome to Ultimate GO MY COD dining</h1>
+            <p>Your culinary adventure awaits</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <h2>Our Delicious Menu</h2>
+        <p>Explore our range of delightful dishes crafted with love.</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic Italian pizza with fresh basil.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2022/11/red-sauce-pasta-1-500x500.jpg" alt="Pasta">
+                <h3>Spaghetti Carbonara</h3>
+                <p>Creamy pasta with pancetta and Parmesan.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://thebigmansworld.com/wp-content/uploads/2023/07/sirloin-steak-recipe.jpg" alt="Steak">
+                <h3>Grilled Steak</h3>
+                <p>Perfectly grilled steak with sides.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="menu-section" id="drinks">
+        <h2>Refreshing Drinks</h2>
+        <p>Pair your meal with one of our refreshing beverages.</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQnM2J9ofn0LdR1XtcR2qa6HGK36_YxAS_Q&s" alt="Cocktail">
+                <h3>Mojito</h3>
+                <p>Minty and refreshing classic cocktail.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://m.media-amazon.com/images/I/71pxhfMS0TL._AC_UF894,1000_QL80_.jpg" alt="Wine">
+                <h3>Chardonnay</h3>
+                <p>Elegant and fruity white wine.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.eatingwell.com/thmb/CokPYaf2YPnPACHBls_LVhyUp0g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/healthy-breakfast-smoothie-8029983-4000x4000-3e02d40929c8410c877a171a235c99bc.jpg" alt="Smoothie">
+                <h3>Fruit Smoothie</h3>
+                <p>Deliciously blended fresh fruits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>+216 20 601 266</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>benabdallahahmedzliga999@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>boumhal,go my code the best of all</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Ultimate Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
